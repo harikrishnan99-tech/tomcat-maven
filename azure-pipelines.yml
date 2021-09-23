@@ -10,9 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: 
-    mvn clean compile
-    mvn test
+
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
